@@ -6,5 +6,5 @@ target
 /.project
 /.settings
 /RUNNING_PID
-.sbtserver/connections/master.log
+.sbtserver
 project/play-fork-run.sbt
