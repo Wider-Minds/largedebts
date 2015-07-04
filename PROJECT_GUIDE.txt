@@ -1,0 +1,8 @@
+https://mongolab.com/home > LargeAccountsLargeDebts > Jgsantos
+
+https://github.com/Wider-Minds/largedebts
+
+gmail: wider.minds@gmail.com
+
+
+Deploy da aplicacao: https://dashboard.heroku.com/apps > conta gmail
