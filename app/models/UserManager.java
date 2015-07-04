@@ -101,6 +101,24 @@ public class UserManager {
         closeConnection();
     }
     
+    public void delete(User user) {
+        
+        openConnection();
+        
+        DBCollection usersCol = database.getCollection("users");
+        
+        if (usersCol == null) {
+            System.out.println("ERROR: Collection not created.");
+            
+            
+        } else {
+            BasicDBObject userDB = new BasicDBObject( "name", user.name );
+            usersCol.remove(userDB);
+        }
+        
+        closeConnection();
+    }
+    
     public void loadUsers() {
         
         openConnection();

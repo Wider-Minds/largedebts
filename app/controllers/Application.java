@@ -31,9 +31,11 @@ public class Application extends Controller {
         return ok(toJson(users));
     }
     
-    public Result testMethod() {
-        userManager.test();
+    public Result delUser() {
+    	User user = Form.form(User.class).bindFromRequest().get();
+    	userManager.delete(user);
+        System.out.println("Deleting user: "+user.name);
         
-        return ok(index.render());
+        return redirect(routes.Application.index());
     }
 }
